@@ -38,10 +38,22 @@ export const EXPERIENCES: ExperienceItem[] = [
 
 export const PROJECTS: ProjectItem[] = [
   {
+    title: "Smart AI Inbox",
+    description: "AI-powered email assistant that classifies, scores and extracts deadlines from your Gmail using a 4-model ML pipeline. Features XGBoost + Random Forest ensemble for priority voting, K-Means clustering for inbox organization, and pgvector semantic search. Achieved 72% accuracy on real-world data with automated deadline extraction and one-click Gmail management.",
+    tech: ["Python", "FastAPI", "React", "XGBoost", "Random Forest", "sentence-transformers", "pgvector", "Supabase", "Google OAuth"],
+    link: "https://smart-ai-inbox.vercel.app"
+  },
+  {
     title: "Good News Only",
     description: "Built a full-stack AI news platform (FastAPI + Vercel) that filters live RSS feeds using a fine-tuned RoBERTa model (75.6% accuracy). Features asynchronous ingestion, background caching, and a lightweight deployment strategy on HuggingFace Spaces to optimize memory and latency.",
     tech: ["FastAPI", "RoBERTa", "HuggingFace", "RSS Ingestion", "Asynchronous Caching"],
     link: "https://good-news-only-app.vercel.app/"
+  },
+  {
+    title: "Hint.ai for LeetCode",
+    description: "A Chrome Extension built with Claude's assistance that provides progressive, Socratic hints for LeetCode problems. Designed to guide user thinking through 4 levels of depth (Intuition to Edge Cases) without spoiling solutions. Features a lightweight MV3 architecture with DOM scraping and automated state management.",
+    tech: ["JavaScript", "Chrome API", "MV3", "DOM Scraping", "MutationObserver"],
+    link: "https://github.com/dhanashree23112003/hint_ai"
   },
   {
     title: "Document Q&A System",
@@ -82,7 +94,7 @@ export const SKILLS: SkillCategory[] = [
   },
   {
     title: "Technical",
-    skills: ["Python", "PyTorch", "TensorFlow", "Scikit-Learn", "Git", "LaTeX", "Data Structures", "Flask", "Pandas"]
+    skills: ["Python", "PyTorch", "TensorFlow", "Scikit-Learn", "XGBoost", "Supabase", "Git", "LaTeX", "Chrome Extensions", "DOM Scraping", "Data Structures", "Flask", "Pandas"]
   },
   {
     title: "Research",
